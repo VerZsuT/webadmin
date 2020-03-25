@@ -11,7 +11,7 @@ sudo apt install nodejs
 ```
 sudo apt install npm
 ```
-4. Пo to the folder with the unzipped files.
+4. Go to the folder with the unzipped files.
 ```
 cd <PATH>
 ```
