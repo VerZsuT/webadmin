@@ -1,0 +1,82 @@
+#editor,
+#creationDialog {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 3;
+}
+
+#editorHeader {
+    height: 24px;
+    border: 1px solid black;
+    background-color: #b9eae3;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: maroon;
+}
+
+#linesCount {
+    position: absolute;
+    width: 30px;
+    height: 520px;
+    border: 1px solid black;
+    border-top: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    overflow: hidden;
+    background-color: lightcyan;
+    color: #4e6465;
+}
+
+.count {
+    margin: 0;
+    padding: 0;
+}
+
+#textArea {
+    padding-left: 35px;
+    border: 1px solid black;
+    border-top: none;
+    margin: 0;
+    width: 850px;
+    height: 520px;
+    outline: none;
+    font-size: 15px;
+    overflow: auto;
+    white-space: pre;
+}
+
+#editorSave {
+    position: absolute;
+    border: none;
+    font-weight: bold;
+    top: 1px;
+    right: 30px;
+    height: 27px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#editorExit {
+    position: absolute;
+    border: none;
+    background: none;
+    top: 1px;
+    right: 1px;
+    color: red;
+    cursor: pointer;
+    width: 30px;
+    height: 27px;
+    outline: none;
+}
+
+#editorSave:hover,
+#editorExit:hover {
+    background: #abc3c0;
+}

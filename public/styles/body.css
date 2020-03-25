@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+    font-family: "Arial";
+}
+
+button,
+input,
+textarea {
+    outline: none;
+}
