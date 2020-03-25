@@ -31,4 +31,4 @@ sudo npm install
 ```
 sudo node webadmin.js
 ```
-8. Go to the address 'http://<your_server_domen_or_ip>:<port>/'
+8. Go to the address 'http://<your_server_domen_or_ip>:(port)/'
