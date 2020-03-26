@@ -16,5 +16,13 @@
     "fileManager"
   ],
   "author": "VerZsuT",
-  "license": "Apache License 2.0"
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerZsuT/webadmin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VerZsuT/webadmin/issues"
+  },
+  "homepage": "https://github.com/VerZsuT/webadmin#readme"
 }
