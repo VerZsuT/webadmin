@@ -1,6 +1,6 @@
 {
   "name": "webadmin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Web file manager",
   "main": "webadmin.js",
   "dependencies": {
@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "quickInstall": "sudo npm install && sudo npm run createConfig && sudo npm run createService && sudo npm run enableAutorun",
+    "quickInstall": "sudo npm install && sudo npm run createConfig && sudo npm run createService && sudo npm run enableAutorun && sudo npm run start",
     "start": "sudo systemctl start webadmin",
     "stop": "sudo systemctl stop webadmin",
     "restart": "sudo systemctl restart webadmin",
