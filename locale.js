@@ -16,7 +16,12 @@ const locales = {
         "typeDirText": "Папка",
         "typeDirTitle": "папка",
         "dialogButtonTitle": "создать файл",
-        "dialogButtonText": "Создать"
+        "dialogButtonText": "Создать",
+        "authTitle": "Авторизация",
+        "authHeader": "Авторизуйтесь",
+        "loginPlaceholder": "Логин",
+        "passwordPlaceholder": "Пароль",
+        "loginButtonText": "Войти"
     },
     "en": {
         "localeName": "en",
@@ -35,7 +40,12 @@ const locales = {
         "typeDirText": "Folder",
         "typeDirTitle": "folder",
         "dialogButtonTitle": "create file",
-        "dialogButtonText": "Create"
+        "dialogButtonText": "Create",
+        "authTitle": "Authentificate",
+        "authHeader": "Please sign in",
+        "loginPlaceholder": "Login",
+        "passwordPlaceholder": "Password",
+        "loginButtonText": "Sign in"
     }
 }
 

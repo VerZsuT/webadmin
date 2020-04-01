@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>{_pageTitle_}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/styles/body.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/editor.css">
     <link rel="stylesheet" href="/styles/creationDialog.css">
+    <link rel="stylesheet" href="/styles/editor.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/other.css">
-    <script src="/scripts/jquery-3.4.1.min.js"></script>
-    <script src="/scripts/locales.js"></script>
 </head>
 <body lang="{_localeName_}">
-    <div class="header">
-        <main>
+    <div class="header container">
+        <main class="">
             <h2 class="title">{_pageTitle_}</h2>
             <div class="urlBar">
                 <input type="file" id="fileInput" name="file">
-                <button id="goBefore" title="{_goBeforeTitle_}">←</button>
+                <button id="goBefore" title="{_goBeforeTitle_}"></button>
                 <div id="currentUrl">/</div>
-                <button id="createFile" title="{_createFileTitle_}">+</button>
-                <button id="uploadFile" title="{_uploadFileTitle_}">U</button>
+                <button id="createFile" title="{_createFileTitle_}"></button>
+                <button id="uploadFile" title="{_uploadFileTitle_}"></button>
                 <div class="clearBoth" style="clear: both;"></div>
             </div>
             <div id="container"></div>
@@ -49,6 +49,8 @@
         </div>
     </div>
 
+    <script src="/scripts/locales.js"></script>
+    <script src="/scripts/jquery-3.4.1.min.js"></script>
     <script src="/scripts/variables.js"></script>
     <script src="/scripts/functions.js"></script>
     <script src="/scripts/handlers.js"></script>

@@ -16,21 +16,24 @@ main {
 }
 
 #goBefore {
+    background: url(/icons/go_before.png) 50% no-repeat;
     float: left;
     width: 37px;
     height: 30px;
-    border-left: none;
-    border-right: 1px solid black;
-    border-top: none;
-    border-bottom: none;
+    border: none;
     outline: none;
-    font-size: 20px;
     cursor: pointer;
 }
 
 #goBefore:active,
 #createFile:active {
     background: lightgray;
+}
+
+#goBefore:hover,
+#createFile:hover,
+#uploadFile:hover {
+    background-color: lightgray;
 }
 
 #currentUrl {
@@ -46,21 +49,13 @@ main {
 }
 
 #createFile {
+    background: url(/icons/add_icon.png) 50% no-repeat;
     width: 30px;
     height: 30px;
-    color: #41bf91;
     float: right;
     border: none;
     outline: none;
     cursor: cell;
-    border-left: 1px solid black;
-    font-weight: bold;
-    font-size: 27px;
-}
-
-#createFile:hover,
-#goBefore:hover {
-    background: lightgray;
 }
 
 #uploadFile {
@@ -68,14 +63,8 @@ main {
     height: 30px;
     float: right;
     border: none;
-    border-left: 1px solid black;
-    color: green;
-    font-size: 20px;
+    background: url(/icons/upload_icon.png) 50% no-repeat;
     cursor: pointer;
-}
-
-#uploadFile:hover {
-    background: lightgray;
 }
 
 #container {
@@ -130,7 +119,8 @@ main {
     border-bottom: 2px solid black;
 }
 
-.removeTrigger {
+.removeTrigger,
+.downloadTrigger {
     float: right;
     position: relative;
     top: -10px;
@@ -138,18 +128,24 @@ main {
     height: 42px;
 }
 
-.removeTrigger:hover .removeButton {
+.removeTrigger:hover .removeButton,
+.downloadTrigger:hover .downloadButton {
     display: block;
 }
 
-.removeButton {
+.removeButton,
+.downloadButton {
     display: none;
     width: 100%;
     height: 100%;
     border: none;
-    border-left: 1px solid black;
-    font-size: 35px;
-    background: red;
-    color: white;
     cursor: pointer;
+}
+
+.downloadButton {
+    background: url(/icons/download_icon.png) 50% no-repeat;
+}
+
+.removeButton {
+    background: url(/icons/delete_icon.png) 50% no-repeat;
 }
