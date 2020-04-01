@@ -1,15 +1,22 @@
 {
   "name": "webadmin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Web file manager",
   "main": "webadmin.js",
   "dependencies": {
+    "adm-zip": "^0.4.14",
     "express": "^4.17.1",
     "multer": "^1.4.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "quickInstall": "sudo npm run createConfig && sudo npm run createService && sudo npm run enableAutorun",
+    "start": "sudo systemctl start webadmin",
+    "stop": "sudo systemctl stop webadmin",
+    "restart": "sudo systemctl restart webadmin",
+    "createConfig": "sudo node createConfig.js",
+    "createService": "sudo mv webadmin.service /etc/systemd/system/webadmin.service && sudo systemctl daemon-reload",
+    "enableAutorun": "sudo systemctl enable webadmin"
   },
   "keywords": [
     "web",

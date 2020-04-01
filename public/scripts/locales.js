@@ -19,7 +19,11 @@ var locales = {
         "errorCreateFileText": "Не удалось создать файл",
         "errorCreateFolderText": "Не удалось создать папку",
         "successSaveFileText": "Сохранено",
-        "errorSaveFileText": "Не удалось сохранить"        
+        "errorSaveFileText": "Не удалось сохранить",
+        "startDownloadText": "Скачивание началось",
+        "errorDownloadText": "Не удаётся скачать",
+        "downloadFileTitle": "скачать файл",
+        "downloadFolderTitle": "скачать папку"
     },
     "en": {
         "folderReadError": "Folder read error",
@@ -41,6 +45,10 @@ var locales = {
         "errorCreateFileText": "Failed to create file",
         "errorCreateFolderText": "Failed to create folder",
         "successSaveFileText": "Saved",
-        "errorSaveFileText": "Failed to save"
+        "errorSaveFileText": "Failed to save",
+        "startDownloadText": "Download started",
+        "errorDownloadText": "Failed to download file",
+        "downloadFileTitle": "download file",
+        "downloadFolderTitle": "download folder"
     }
 }

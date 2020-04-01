@@ -1,0 +1,7 @@
+{
+    "localeName": "en",
+    "port": 90,
+    "accessProtection": true,
+    "accessLogin": "admin",
+    "accessPassword": "admin"
+}

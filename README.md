@@ -20,17 +20,28 @@ cd <PATH>
 
 5. Install **webadmin**:
 ```
-sudo npm install
+sudo npm run quickInstall
 ```
 
-6. Change **conf.json** file:
-* _localName_ - localization name (ru/en).
-* _port_ - port on which the script will work.
-* _acceptIp_ - ip from which the file manager will be available.
-
-7. Run **webadmin**:
+6. Run **webadmin**:
 ```
-sudo node webadmin.js
+sudo npm run start
 ```
 
-8. Go to the address _http://<your_server_domen_or_ip>:(port)/_.
+7. Go to the address 'http://<your_server_domen_or_ip>:(port)/
+
+# NPM scripts
+* **createConfig** - starts the configuration dialog.
+* **start** - launch **webadmin**.
+* **stop** - stop **webadmin**.
+* **restart** - restart **webadmin**.
+* **createService** - create a **webadmin** service to work in the background.
+* **enableAutorun** - put **webadmin** on startup.
+* **quickInstall** - run 'createConfig' -> 'createService' -> 'enableAutorun'.
+
+# Config options
+* **localeName** - language in which the file manager will work. _Default: **'en'**_
+* **port** - port on which **webadmin** will work. _Default: **90**_
+* **accessProtection** - enable/disable access protection. _Default: **true**_
+* **accessLogin** - **webadmin** login. _Default: **'admin'**_
+* **accessPassword** - **webadmin** password. _Default: **'admin'**_

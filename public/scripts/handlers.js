@@ -10,6 +10,7 @@ fileInput.onchange = (event) => {
     let data = new FormData()
     data.append("file", file)
     data.append("dirUrl", curDir)
+    data.append("accessCode", getCookies().accessCode)
 
     $.ajax({
         url: "/api/file.upload",
@@ -21,9 +22,11 @@ fileInput.onchange = (event) => {
         success: () => {
             showNotification(locales[locale]["successUploadFileText"])
             getFiles(curDir)
+            fileInput.files.length = 0
         },
         error: () => {
             showNotification(locales[locale]["errorUploadFileText"], true)
+            fileInput.files.length = 0
         }
     })
 }
@@ -51,6 +54,13 @@ $textArea.keydown((e) => {
         e.preventDefault()
         insertText("\n")
         updateCount($textArea.val())
+    }
+})
+
+$dialogInput.keydown((e) => {
+    if (e.keyCode == 13) {
+        e.preventDefault()
+        $dialogButton.click()
     }
 })
 
