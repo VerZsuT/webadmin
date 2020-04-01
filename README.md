@@ -23,12 +23,7 @@ cd <PATH>
 sudo npm run quickInstall
 ```
 
-6. Run **webadmin**:
-```
-sudo npm run start
-```
-
-7. Go to the address 'http://<your_server_domen_or_ip>:(port)/
+6. Go to the address 'http://<your_server_domen_or_ip>:(port)/
 
 # NPM scripts
 * **createConfig** - starts the configuration dialog.
