@@ -20,7 +20,7 @@ rl.question(`Localization(${configData['localeName']}): `, (answer) => {
     rl.question(`Port(${configData['port']}): `, (answer) => {
         addToConfig('port', answer) 
         rl.question(`Enable access protection?(${configData['accessProtection']}): `, (answer) => {
-            addToConfig('accessProtection', answer == true)
+            addToConfig('accessProtection', answer == 'true')
             if (configData.accessProtection == true) {
                 rl.question(`Access login(${configData['accessLogin']}): `, (answer) => {
                     addToConfig('accessLogin', answer)
