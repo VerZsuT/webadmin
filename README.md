@@ -10,7 +10,7 @@ cd <folder_path>
 
 3. Install **webadmin**:
 ```
-sudo bash insall.sh
+sudo bash install.sh
 ```
 
 4. Go to the address 'http://<your_server_domen_or_ip>:(port)/
