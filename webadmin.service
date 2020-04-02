@@ -1,0 +1,9 @@
+[Unit]
+Description=webadmin-daemon
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/node /var/www/webadmin/webadmin.js
+
+[Install]
+WantedBy=multi-user.target
