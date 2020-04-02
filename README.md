@@ -3,27 +3,17 @@ Web file manager for your linux server.
 
 # Instalation
 1. Unzip files.
-2. Install **nodejs**:
+2. Go to the folder with the unzipped files:
 ```
-sudo apt install nodejs
-```
-
-3. Install **npm**:
-```
-sudo apt install npm
+cd <folder_path>
 ```
 
-4. Go to the folder with the unzipped files:
+3. Install **webadmin**:
 ```
-cd <PATH>
-```
-
-5. Install **webadmin**:
-```
-sudo npm run quickInstall
+sudo bash insall.sh
 ```
 
-6. Go to the address 'http://<your_server_domen_or_ip>:(port)/
+4. Go to the address 'http://<your_server_domen_or_ip>:(port)/
 
 # NPM scripts
 * **createConfig** - starts the configuration dialog.
