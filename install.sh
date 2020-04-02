@@ -1,17 +1,17 @@
 #!/bin/bash
 
 echo "[WA]: Installing webadmin..."
-sleep 2
+sleep 1
 
 echo "[WA]: Installing Node.js..."
 sleep 1
-apt install nodejs
+apt install nodejs -y
 echo "[WA]: Installed."
 sleep 2
 
 echo "[WA]: Installing 'npm'..."
 sleep 1
-apt install npm
+apt install npm -y
 echo "[WA]: Installed."
 sleep 2
 
