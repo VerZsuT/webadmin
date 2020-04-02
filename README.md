@@ -1,5 +1,5 @@
 # webadmin
-Web file manager for your linux server.
+Web file manager for linux.
 
 # Instalation
 1. Unzip files.
