@@ -1,6 +1,6 @@
 {
   "name": "webadmin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Web file manager",
   "main": "webadmin.js",
   "dependencies": {
@@ -15,7 +15,7 @@
     "stop": "sudo systemctl stop webadmin",
     "restart": "sudo systemctl restart webadmin",
     "createConfig": "sudo node createConfig.js",
-    "createService": "sudo mv webadmin.service /etc/systemd/system/webadmin.service && sudo systemctl daemon-reload",
+    "createService": "sudo cp webadmin.service /etc/systemd/system/webadmin.service && sudo systemctl daemon-reload",
     "enableAutorun": "sudo systemctl enable webadmin"
   },
   "keywords": [
