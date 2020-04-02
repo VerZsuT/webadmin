@@ -269,8 +269,8 @@ function createFileElement(fileUrl, fileName, count) {
 function getCookies() {
     let cookies = {}
     for (let item of document.cookie.split(';')) {
-        let key = item.split('=')[0]
-        let value = item.split('=')[1]
+        let key = item.split('=')[0].trim()
+        let value = item.split('=')[1].trim()
         cookies[key] = value
     }
     return cookies
