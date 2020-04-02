@@ -26,12 +26,16 @@ rl.question(`Localization(${configData['localeName']}): `, (answer) => {
                     addToConfig('accessLogin', answer)
                     rl.question(`Access password(${configData['accessPassword']}): `, (answer) => {
                         addToConfig('accessPassword', answer)
+                        createConfig()
+                        initService()
+                        rl.close()
                     })
                 })
+            } else {
+                createConfig()
+                initService()
+                rl.close()
             }
-            createConfig()
-            initService()
-            rl.close()
         })
     })
 })
